@@ -5,7 +5,7 @@ include "Database.php";
 ?>
 
 <?php 
-
+// database connection
  $db = new Database();
 if(isset($_POST['submit'])){ 
  $name  = mysqli_real_escape_string($db->link, $_POST['name']);
